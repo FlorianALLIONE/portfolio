@@ -34,7 +34,7 @@ nav a {
   transition: all 0.2s;
 }
 
-nav a:hover {
+nav a.menu:hover {
   padding: 15px 10px;
   background-color: rgb(75, 75, 75);
   border-radius: 10px;
@@ -42,6 +42,10 @@ nav a:hover {
 }
 main {
   padding: 140px 0 80px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 .index-left-col {
   width: 40%;
@@ -54,7 +58,7 @@ main {
   box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.74);
   text-align: center;
 }
-.index-left-col a {
+.index-col a.index-button {
   text-decoration: none;
   color: white;
   padding: 10px;
@@ -64,11 +68,43 @@ main {
   transition-property: background-color, color;
   transition-duration: 0.5s;
 }
-.index-left-col a:hover {
+.index-col a.index-button:hover {
   background-color: white;
   color: rgb(255, 123, 0);
   transition-property: background-color, color;
   transition-duration: 0.5s;
+}
+.index-right-col {
+  width: 30%;
+  border-radius: 20px;
+  background-color: white;
+  padding: 0 15px 20px 15px;
+  box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.74);
+  display: flex;
+  flex-direction: column;
+}
+.index-right-col .index-r-col-title h2 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.under-title {
+  width: 60px;
+  display: inline-block;
+  color: rgb(255, 123, 0);
+  border: 2px rgb(255, 123, 0) solid;
+}
+.index-right-col .index-r-col-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.index-right-col .index-r-col-contain a.index-mail-button {
+  text-decoration: none;
+  color: black;
+}
+.index-right-col .index-r-col-contain a.index-mail-button:hover {
+  text-decoration: underline;
 }
 footer {
   display: flex;
@@ -111,7 +147,7 @@ footer .panel-admin {
   text-decoration: none;
   color: white;
   font-size: 0.7em;
-  margin: 10px;
+  margin: 10px auto 20px auto;
 }
 footer .panel-admin:hover {
   text-decoration: underline;
