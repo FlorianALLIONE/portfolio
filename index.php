@@ -5,15 +5,15 @@
         <p>
             Je m'appelle ALLIONE Florian, j'ai 20 ans, actuellement en deuxième année de Bachelor chez YNOV
             Informatique
-            à Aix-en-Provence.<br><br>Grand Passionné d'informatique, j'adore
-            en apprendre plus sur ce domaine très vaste.<br><br>Militaire de Réserve à côté, j'utilise un peu de mon
+            à Aix-en-Provence.<br/><br/>Grand Passionné d'informatique, j'adore
+            en apprendre plus sur ce domaine très vaste.<br/><br/>Militaire de Réserve à côté, j'utilise un peu de mon
             temps
             libre pour
-            défendre les grandes valeurs de nos armées et de la République à la BA 125 d'ISTRES en Escadron de Protection.<br><br>Je vous laisse
+            défendre les grandes valeurs de nos armées et de la République à la BA 125 d'ISTRES en Escadron de Protection.<br/><br/>Je vous laisse
             donc
             naviguer sur ce Blog pour en apprendre un peu plus sur moi.
         </p>
-        <a href="#" title="Me Découvrir" class="index-button">ME DECOUVRIR</a>
+        <a href="aPropos.php" title="Me Découvrir" class="index-button">ME DECOUVRIR</a>
     </div>
     <div class="index-right-col index-col">
         <div class="index-r-col-title">

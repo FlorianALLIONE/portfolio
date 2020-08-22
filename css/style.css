@@ -29,7 +29,7 @@ header {
   transform: translateY(-200%);
   transition: transform 0.6s ease-in-out;
   border-bottom: 3px solid rgb(255, 123, 0);
-  border-top: 2px solid rgb(255, 123, 0);
+  border-top: 1.5px solid rgb(255, 123, 0);
 }
 .menu-burger ul {
   display: flex;
@@ -160,6 +160,7 @@ main.index {
   padding: 20px 15px;
   box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.74);
   text-align: center;
+  animation: 1s 1 slide-right;
 }
 .index-col a.index-button {
   text-decoration: none;
@@ -185,6 +186,7 @@ main.index {
   box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.74);
   display: flex;
   flex-direction: column;
+  animation: 1s 1 slide-left;
 }
 .index-right-col .index-r-col-title h2 {
   font-size: 40px;
@@ -209,6 +211,74 @@ main.index {
 .index-right-col .index-r-col-contain a.index-mail-button:hover {
   text-decoration: underline;
 }
+
+/*
+ *
+ MAIN PAGE A PROPOS
+ *
+ */
+.apropos-col-container {
+  display: flex;
+  justify-content: space-between;
+}
+.bandeau-img {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/blue-sky.jpg);
+  background-size: 100% 500px;
+  border-bottom: 4px solid #e94e1b;
+  text-align: center;
+  vertical-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+.bandeau-img h1 {
+  width: 250px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  background-color: #e94e1b;
+}
+.content-container {
+  margin: 50px auto;
+  width: 80%;
+  animation: 2s 1 slide-top;
+}
+.content-container .onglet-info {
+  width: 85%;
+  margin: 0 auto;
+}
+.content-container .apropos-col-container .onglet-info {
+  width: 35%;
+  margin: 10px auto;
+}
+.content-container h2 {
+  font-size: 30px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.content-container hr.under-title {
+  color: #e94e1b;
+  width: 30px;
+  border: 2px solid #e94e1b;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+.content-container p.under-hr {
+  font-size: 17px;
+  margin-bottom: 60px;
+}
+.content-container img {
+  width: 70%;
+}
+/* .cv-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+} */
 
 @media screen and (max-width: 963px) {
   /*
@@ -255,5 +325,78 @@ main.index {
   }
   .index-col {
     width: 70%;
+  }
+
+  /*
+   *
+   MAIN A PROPOS
+   *
+   */
+
+  .content-container {
+    width: 80%;
+  }
+  .content-container .apropos-col-container .onglet-info {
+    width: 100%;
+    margin: 30px auto;
+  }
+  .apropos-col-container {
+    display: block;
+    width: 100%;
+  }
+  .content-container .onglet-info {
+    width: 100%;
+  }
+  .bandeau-img {
+    background-size: 200% 500px;
+  }
+  .cv-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cv-container img {
+    width: 80%;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(10%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(-10%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-top {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
