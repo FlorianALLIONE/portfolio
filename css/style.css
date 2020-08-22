@@ -7,22 +7,62 @@ body {
   background-color: rgba(255, 123, 0, 0.247);
   font-family: "Rubik", sans-serif;
 }
+
+/*
+ *
+ BANDEAU HEADER + BOUTON BURGER
+ *
+ */
+
 header {
   position: fixed;
   background-color: #313131;
   width: 100%;
   border-bottom: 3px solid rgb(255, 123, 0);
+  z-index: 10;
 }
-ul {
+.menu-burger {
+  position: fixed;
+  width: 100%;
+  background-color: #313131;
+  color: white;
+  transform: translateY(-200%);
+  transition: transform 0.6s ease-in-out;
+  border-bottom: 3px solid rgb(255, 123, 0);
+  border-top: 2px solid rgb(255, 123, 0);
+}
+.menu-burger ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.menu-burger li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+.menu-burger a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+}
+.menu-burger a:hover {
+  background-color: rgb(75, 75, 75);
+}
+nav ul {
   display: flex;
 }
-li {
+nav li {
   list-style: none;
   color: white;
   padding: 3px 10px;
   margin: auto auto;
 }
-li.entete-nav {
+nav li.entete-nav {
   font-size: 25px;
   font-weight: bold;
   margin-left: 10px;
@@ -40,7 +80,70 @@ nav a.menu:hover {
   border-radius: 10px;
   transition: all 0.3s;
 }
-main {
+.hamburger {
+  display: none;
+}
+
+/*
+ *
+ BANDEAU FOOTER
+ *
+ */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #313131;
+  position: relative;
+  color: azure;
+  width: 100%;
+  bottom: 0;
+  border-top: 3px solid rgb(255, 123, 0);
+  padding: 10px 0;
+}
+footer img {
+  width: 20px;
+  padding: 10px 5px 5px 5px;
+  margin: 5px 0 0 0;
+}
+footer a.a-img {
+  padding: 5px;
+  transition: all 0.2s;
+}
+footer a.a-img:hover {
+  padding: 20px 5px 0 5px;
+  background-color: rgb(75, 75, 75);
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+footer address {
+  font-style: normal;
+  font-family: "Rubik", sans-serif;
+  font-size: 0.7em;
+}
+footer address span {
+  position: relative;
+  bottom: 11px;
+  margin-left: 5px;
+}
+footer .panel-admin {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7em;
+  margin: 10px auto 20px auto;
+}
+footer .panel-admin:hover {
+  text-decoration: underline;
+}
+
+/*
+ *
+ MAIN PAGE INDEX
+ *
+ */
+
+main.index {
   padding: 140px 0 80px 0;
   display: flex;
   flex-direction: row;
@@ -106,49 +209,51 @@ main {
 .index-right-col .index-r-col-contain a.index-mail-button:hover {
   text-decoration: underline;
 }
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #313131;
-  position: relative;
-  color: azure;
-  width: 100%;
-  bottom: 0;
-  border-top: 3px solid rgb(255, 123, 0);
-  padding: 10px 0;
-}
-footer img {
-  width: 20px;
-  padding: 10px 5px 5px 5px;
-  margin: 5px 0 0 0;
-}
-footer a.a-img {
-  padding: 5px;
-  transition: all 0.2s;
-}
-footer a.a-img:hover {
-  padding: 20px 5px 0 5px;
-  background-color: rgb(75, 75, 75);
-  border-radius: 10px;
-  transition: all 0.3s;
-}
-footer address {
-  font-style: normal;
-  font-family: "Rubik", sans-serif;
-  font-size: 0.7em;
-}
-footer address span {
-  position: relative;
-  bottom: 11px;
-  margin-left: 5px;
-}
-footer .panel-admin {
-  text-decoration: none;
-  color: white;
-  font-size: 0.7em;
-  margin: 10px auto 20px auto;
-}
-footer .panel-admin:hover {
-  text-decoration: underline;
+
+@media screen and (max-width: 963px) {
+  /*
+   *
+   BANDEAU HEADER + BOUTON BURGER
+   *
+   */
+
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    border-radius: 35%;
+    padding: 10px 10px 7px 10px;
+    transition: all 0.3s;
+  }
+  .hamburger img {
+    width: 30px;
+  }
+  li.entete-nav {
+    width: 30px;
+  }
+  .hamburger:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+    transition: all 0.3s;
+  }
+  .menu-burger-active {
+    transform: translateY(0);
+  }
+
+  /*
+   *
+   MAIN INDEX
+   *
+   */
+
+  main.index {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .index-left-col {
+    margin-bottom: 50px;
+  }
+  .index-col {
+    width: 70%;
+  }
 }
