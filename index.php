@@ -23,7 +23,7 @@
         <div class="index-r-col-contain">
             <p>Mon E-mail : <a href="mailto:florian.allione@gmail.com"
                     class="index-mail-button">florian.allione@gmail.com</a></p>
-            <a href="#" title="Me Contacter" class="index-button">ME CONTACTER</a>
+            <a href="contact.php" title="Me Contacter" class="index-button">ME CONTACTER</a>
         </div>
 
     </div>

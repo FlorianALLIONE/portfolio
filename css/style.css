@@ -274,11 +274,77 @@ main.index {
 .content-container img {
   width: 70%;
 }
-/* .cv-container {
+
+/*
+ *
+ MAIN PAGE CONTACT
+ *
+ */
+
+form {
+  width: 70%;
+  margin: 50px auto;
+  padding: 10px 20px 30px 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.74);
+}
+form h1 {
+  margin-bottom: 0;
+}
+form a {
+  color: black;
+}
+.input-col {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   justify-content: space-around;
-} */
+  width: 80%;
+  margin: 35px auto;
+}
+.input-col label {
+  margin-bottom: 10px;
+}
+.input-col input {
+  border: 2px solid rgb(255, 123, 0);
+  border-radius: 5px;
+  height: 25px;
+  padding: 0 5px;
+  transition: box-shadow 1s;
+}
+.input-col input:focus {
+  box-shadow: 0px 0px 10px -3px rgb(255, 123, 0);
+  transition: box-shadow 1s;
+}
+.input-col textarea {
+  resize: none;
+  border: 2px solid rgb(255, 123, 0);
+  border-radius: 5px;
+  padding: 5px;
+  height: 150px;
+  transition: box-shadow 1s;
+}
+.input-col textarea:focus {
+  box-shadow: 0px 0px 10px -3px rgb(255, 123, 0);
+  transition: box-shadow 1s;
+}
+.submit-container {
+  margin: 40px 0 0 0;
+  text-align: center;
+}
+.submit-container input {
+  padding: 10px 20px;
+  background-color: #e94e1b;
+  color: white;
+  border: 1.5px solid #e94e1b;
+  border-radius: 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+.submit-container input:hover {
+  background-color: white;
+  color: #e94e1b;
+  transition: color 0.3s, background-color 0.3s;
+}
 
 @media screen and (max-width: 963px) {
   /*
@@ -355,7 +421,7 @@ main.index {
     align-items: center;
   }
   .cv-container img {
-    width: 80%;
+    width: 100%;
   }
 }
 
