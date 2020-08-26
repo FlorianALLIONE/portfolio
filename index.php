@@ -3,7 +3,7 @@
     <div class="index-left-col index-col">
         <img src="img/maPhoto.png" alt="Photo de Florian" />
         <p>
-            Je m'appelle ALLIONE Florian, j'ai 20 ans, actuellement en deuxième année de Bachelor chez YNOV
+            Florian ALLIONE, 20 ans, je suis actuellement en deuxième année de Bachelor chez YNOV
             Informatique
             à Aix-en-Provence.<br/><br/>Grand Passionné d'informatique, j'adore
             en apprendre plus sur ce domaine très vaste.<br/><br/>Militaire de Réserve à côté, j'utilise un peu de mon

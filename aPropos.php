@@ -8,7 +8,7 @@
             <div class="onglet-info">
                 <h2>QUI JE SUIS ?</h2>
                 <hr class="under-title" />
-                <p>Je suis Florian ALLIONE, 20 ans, étudiant en deuxième année d'informatique chez YNOV à Aix-en-Provence. J'y apprends la programmation web ( HTML5, CSS3, PHP 7, JavaScript ), logiciel ( Python, C++ ) ainsi que le fonctionnement du réseau et des solutions d'infrastructure réseau grâce à des cours Cisco et Linux.<br/><br/>En plus de mes études chez YNOV, je travaille pour l'Armée de l'Air Française en tant qu'<strong>Equipier Commando de l'Air</strong> ( Réserviste ) à la BA 125 d'ISTRES depuis plus de 2 ans. Et c'est un réel plaisir et honneur de servir nos Armées et de défendre ses valeurs : <strong>RESPECT, SERVICE, INTEGRITE et EXCELLENCE</strong>.<br/><br/>En dehors de tout ça, j'aime le sport et je pratique occasionnellement du piano. Fan de moto !</p>
+                <p>Je suis Florian ALLIONE, 20 ans, étudiant en deuxième année d'informatique chez YNOV à Aix-en-Provence. J'y apprends la programmation web ( HTML5, CSS3, PHP 7, JavaScript ), logiciel ( Python, C++ ) ainsi que le fonctionnement du réseau et des solutions d'infrastructure réseau grâce à des cours Cisco et Linux.<br/><br/>En plus de mes études chez YNOV, je travaille pour l'Armée de l'Air Française en tant qu'<strong>Equipier Commando de l'Air</strong> ( Réserviste ) à la BA 125 d'ISTRES depuis plus de 2 ans. C'est un réel plaisir et honneur de servir nos Armées et de défendre ses valeurs : <strong>RESPECT, SERVICE, INTEGRITE et EXCELLENCE</strong>.<br/><br/>En dehors de tout ça, j'aime le sport et je pratique occasionnellement du piano. Fan de moto !</p>
             </div>
             <div class="onglet-info">
                 <h2>MON CV</h2>
